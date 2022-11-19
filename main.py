@@ -36,6 +36,3 @@ async def getPostById(postid:int):
         if(item.postId==postid):
             return item
     return {item:item}
-
-if __name__ == "__main__":
-  uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
