@@ -55,6 +55,10 @@ async def home():
     #     print(doc)
     return list(result)
 
+    @app.get("/home")
+    async def home():
+        return {"status": True}
+
 
 @app.post("/newPost", tags=["posts"])
 async def addPost(post: InputPost):
